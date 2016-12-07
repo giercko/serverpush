@@ -1,4 +1,4 @@
-var send_push = function(regID){
+var send_push = function(regID, msg, title){
 	var gcm = require('node-gcm');
 	var sender = new gcm.Sender('AIzaSyDOZ0MT28iyjKK5vSQ-WC7SNjXbRx00zkg');
 
@@ -8,8 +8,8 @@ var send_push = function(regID){
 
 	var message = new gcm.Message();
 
-	message.addData('message',"Prueba 1 notificaciones");
-	message.addData('title','Almuerzo utilizado');
+	message.addData('message',msg);
+	message.addData('title',title);
 
 
 	message.timeToLive = 3000; //tiempo que se mantendra "vivo" la notificacion, en segundos, por defecto 4 semanas (2419200)
