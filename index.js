@@ -38,7 +38,7 @@ api.route('/students/:id')
 
 app.use('/api', api);
 
-
+// pasar como argumento el registrationID que aparece en la consola de debug de android studio
 notify.send_push('APA91bEB8XGuP5njtvie-dAuMij8U4w-pxmw-udYthJCemJsmIYBZ8vjwO64Gjum2iip-0HvYXWdTOY4Z5I45-8TD0Siu3H2KtAYc3vZLR90nWLp07yRiOPP0nTAcUQY4ycrRbDSGs8n2LH3i8rzt2UffSssuh0WQQ');
 
 
